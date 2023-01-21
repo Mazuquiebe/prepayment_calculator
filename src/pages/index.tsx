@@ -1,26 +1,22 @@
-import React ,{useContext } from "react"
-import Form from "../components/Form";
+import React, { useContext } from "react";
+import FormData from "../components/Form";
 import List from "../components/List";
 import { DataContext } from "../Contexts/DataContext";
 
-
 const MainPage = () => {
+  const { treatedData } = useContext(DataContext);
 
-    const {
-        treatedData
-    } = useContext(DataContext)
-
-    return(
-          <section className="general_section">
-              <div className="section-div--general">
-                  <Form />
-              </div>
-              <div className="section-div--general background-grey">
-                  <h1>VOCÊ RECEBERÀ:</h1>
-                  <List data={treatedData}/>
-              </div>
-          </section>
-    );
+  return (
+    <section className="general_section">
+      <div className="section-div--general">
+        <FormData />
+      </div>
+      <div className="section-div--general background-grey">
+        <h1>VOCÊ RECEBERÀ:</h1>
+        <List data={treatedData} />
+      </div>
+    </section>
+  );
 };
 
 export default MainPage;

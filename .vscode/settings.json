@@ -1,0 +1,34 @@
+{
+  "liveServer.settings.CustomBrowser": "chrome",
+  "vscode-edge-devtools.mirrorEdits": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.wordWrap": "on",
+  "editor.largeFileOptimizations": false,
+  "editor.tabSize": 4,
+  "open-in-browser.default": "Brave Web Browser",
+  "workbench.tree.indent": 6,
+  "git.allowForcePush": true,
+  "git.allowNoVerifyCommit": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "editor.cursorStyle": "block-outline",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "editor.formatOnSave": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {},
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontLigatures": true
+}
