@@ -1,9 +1,11 @@
-import React from "react"
+import React from "react";
+import { StyledInput } from "./styles";
+import { IInputProps } from "../../interfaces";
 
-const Input = () =>{
+const Input = ({...rest}: IInputProps) => {
     return(
-        <input/>
-    )
-}
+        <StyledInput {...rest}/>
+    );
+};
 
-export default Input
+export default Input;
