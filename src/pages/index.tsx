@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import FormData from "../components/Form";
+import FormData from "../components/FormData";
 import List from "../components/List";
 import { DataContext } from "../Contexts/DataContext";
 

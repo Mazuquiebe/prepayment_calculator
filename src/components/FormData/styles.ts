@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: space-evenly;
 
@@ -10,40 +11,43 @@ export const Form = styled.form`
   height: 100%;
 
   legend {
-    font: bold 1.5rem "Roboto";
+    font: normal 1.5rem "Roboto";
     color: #627788;
+
+    margin: 15px;
   }
+`;
+
+export const Label = styled.label`
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+
+  width: 90%;
+
+  color: #627788;
+
+  font: normal 0.9rem "Roboto";
 `;
 
 export const Input = styled.input`
   display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-content: center;
+
   width: 90%;
-  height: 50%;
+  height: 40px;
 
   border: 2px solid #b0c2d1;
   border-radius: 5px;
 
   outline: none;
 
-  :hover {
-    border: 2px solid #1e90ff;
-  }
   :focus {
     border: 2px solid #1e90ff;
   }
-`;
-
-export const Label = styled.label`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  width: 90%;
-  height: 80px;
-
-  color: #627788;
-  margin: 0px 5px;
-  font: normal 0.9rem "Roboto";
 `;
 
 export const Button = styled.button`
@@ -53,21 +57,30 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
 
-  width: 50%;
+  width: 40%;
   height: 30px;
 
-  background-color: #b0c2d1;
+  background-color: #f0f8ff;
+  color: #1e90ff;
 
-  border: 2px solid #f0f8ff;
+  border: 1px solid #f0f8ff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0px #a6b6c3;
 
+  margin: 15px;
+
+  cursor: pointer;
   :hover {
     background-color: #1e90ff;
-    border: 2px solid #f0f8ff;
+    border: 2px solid #1e90ff;
 
     color: #f0f8ff;
   }
 `;
 
-export const WarningMsg = styled.span`
+export const Warning = styled.span`
   font: normal 0.7rem "Arial";
+  color: tomato;
+  height: 0.7rem;
+  margin: 0;
 `;

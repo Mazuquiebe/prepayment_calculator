@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Form, Input, Label, Button, WarningMsg } from "./styles";
+import { Form, Input, Label, Button, Warning } from "./styles";
 import { DataContext } from "../../Contexts/DataContext";
 
 const FormData = () => {
@@ -33,35 +33,35 @@ const FormData = () => {
   return (
     <Form onSubmit={(event) => handleSubmit(event)}>
       <legend>Simule sua antecipação</legend>
-      <Label htmlFor="amount">
-        Informe o valor da renda *
-        <Input
-          name="amount"
-          onChange={(event) => setAmount(Number(event.target.value))}
-        />
-      </Label>
-      <Label htmlFor="installments">
-        Em quantas parcelas *
-        <Input
-          name="installments"
-          onChange={(event) => handleInstallments(event.target.value)}
-        />
-        <WarningMsg>{installmentsMsg}</WarningMsg>
-      </Label>
-      <Label htmlFor="mdr">
-        Informe o percentual de MDR *
-        <Input
-          name="mdr"
-          onChange={(event) => setMDR(Number(event.target.value))}
-        />
-      </Label>
-      <Label htmlFor="days">
-        Numero de Dias
-        <Input
-          name="days"
-          onChange={(event) => handleStringDays(event.target.value)}
-        />
-      </Label>
+
+      <Label htmlFor="amount">Informe o valor da renda *</Label>
+      <Input
+        name="amount"
+        onChange={(event) => setAmount(Number(event.target.value))}
+      />
+      <Warning>{installmentsMsg}</Warning>
+
+      <Label htmlFor="installments">Em quantas parcelas *</Label>
+      <Input
+        name="installments"
+        onChange={(event) => handleInstallments(event.target.value)}
+      />
+      <Warning>{installmentsMsg}</Warning>
+
+      <Label htmlFor="mdr">Informe o percentual de MDR *</Label>
+      <Input
+        name="mdr"
+        onChange={(event) => setMDR(Number(event.target.value))}
+      />
+      <Warning>{installmentsMsg}</Warning>
+
+      <Label htmlFor="days">Numero de Dias</Label>
+      <Input
+        name="days"
+        onChange={(event) => handleStringDays(event.target.value)}
+      />
+      <Warning>{installmentsMsg}</Warning>
+
       <Button type="submit">Calcular</Button>
     </Form>
   );
