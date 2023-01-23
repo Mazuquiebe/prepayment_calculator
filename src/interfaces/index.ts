@@ -1,26 +1,6 @@
-import {
-  ReactNode,
-  FormHTMLAttributes,
-  LabelHTMLAttributes,
-  InputHTMLAttributes,
-  ButtonHTMLAttributes,
-} from "react";
+import React, { ReactNode } from "react";
 
 export interface IPropsChildren {
-  children: ReactNode;
-}
-
-export interface IFormProps extends FormHTMLAttributes<HTMLFormElement> {
-  children: ReactNode;
-}
-
-export interface ILabelProps extends LabelHTMLAttributes<HTMLLabelElement> {
-  children: ReactNode;
-}
-
-export interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {}
-
-export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
 }
 
@@ -48,4 +28,5 @@ export interface IDataContext {
   setDataResponse: React.Dispatch<React.SetStateAction<{}>>;
   postRequest: () => Promise<void>;
   treatedData: [string, unknown][];
+  isConnected: boolean;
 }

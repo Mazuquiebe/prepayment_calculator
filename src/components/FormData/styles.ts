@@ -16,6 +16,11 @@ export const Form = styled.form`
 
     margin: 15px;
   }
+
+  @media screen and (min-width: 200px) and (max-width: 450px) {
+    overflow: hidden;
+    width: 90vw;
+  }
 `;
 
 export const Label = styled.label`
@@ -44,6 +49,9 @@ export const Input = styled.input`
   border-radius: 5px;
 
   outline: none;
+  ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
 
   :focus {
     border: 2px solid #1e90ff;

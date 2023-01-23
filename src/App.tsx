@@ -1,17 +1,14 @@
-import React from 'react';
-import './App.css';
-import MainPage from './pages';
-import DataProvider from './Contexts/DataContext';
+import React, { useContext } from "react";
+import "./App.css";
+import MainPage from "./pages/MainPage";
+import { DataContext } from "./Contexts/DataContext";
+import ErrorPage from "./pages/ErrorPage";
 
 const App = () => {
-
+  const { isConnected } = useContext(DataContext);
   return (
-    <div className="App">
-      <DataProvider>
-        <MainPage/>
-      </DataProvider>
-    </div>
+    <div className="App">{isConnected ? <MainPage /> : <ErrorPage />}</div>
   );
-}
+};
 
 export default App;

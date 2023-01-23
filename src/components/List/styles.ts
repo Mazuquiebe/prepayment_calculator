@@ -5,7 +5,6 @@ export const UL = styled.ul`
   flex-direction: column;
 
   align-items: center;
-  gap: 5px;
 
   width: 90%;
   height: 60%;
@@ -19,5 +18,6 @@ export const UL = styled.ul`
 
     width: 100%;
     height: 30px;
+    margin: 10px;
   }
 `;
